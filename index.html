@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Симулякры или симуляция</title>
+    <style>
+        /* Добавьте свой CSS-код здесь */
+        #logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white; /* Add a background color to the logo */
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <img id="logo" src="https://i.imgur.com/wsx7zdD.png" alt="logo">
+    <script src="index.js"></script>
+    <script>
+        var engine = new Engine({"args":[],"canvasResizePolicy":2,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":2766944,"index.wasm":17867504},"focusCanvas":true,"gdnativeLibs":[]});
+        engine.startGame();
+        setTimeout(function() {
+            document.getElementById("logo").style.display = "none";
+        }, 3000);
+    </script>
+</body>
+</html>
+
